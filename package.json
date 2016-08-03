@@ -1,0 +1,38 @@
+{
+  "name": "clipboard-share",
+  "version": "0.1.3",
+  "description": "Share clipboard between two computers",
+  "main": "index.js",
+  "bin": {
+    "clipboard-share": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "lib/*"
+  ],
+  "keywords": [
+    "clipboard",
+    "share",
+    "virtual",
+    "virtualbox",
+    "windows",
+    "linux",
+    "osx",
+    "mac",
+    "copy",
+    "paste"
+  ],
+  "author": "Alexey Prokhorov <alexey.p@l96.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "copy-paste": "^1.3.0",
+    "socket.io": "^1.4.8",
+    "socket.io-client": "^1.4.8",
+    "yargs": "^4.8.1"
+  }
+}
