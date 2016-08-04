@@ -5,3 +5,5 @@ node_js:
   - "node"
 matrix:
   fast_finish: true
+before_install:
+  - sudo apt-get install -y xclip
