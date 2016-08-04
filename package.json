@@ -1,6 +1,6 @@
 {
   "name": "clipboard-share",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Share clipboard between two computers",
   "main": "index.js",
   "bin": {
