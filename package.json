@@ -1,6 +1,6 @@
 {
   "name": "clipboard-share",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Share clipboard between two computers",
   "main": "index.js",
   "bin": {
@@ -41,5 +41,8 @@
     "jshint": "^2.9.2",
     "mocha": "^3.0.0",
     "rewire": "^2.5.2"
+  },
+  "engines": {
+    "node": ">=6.0"
   }
 }
