@@ -6,8 +6,8 @@
 
 It's a small client-server script which allows to synchronise clipboard
   between two computers. It's very useful when you have a virtual machine
-  without installed guest addons (OSX guest for example). It works on
-  Linux, OSX and Windows.
+  like VirtualBox without installed guest additions (Mac OS X guest for example).
+  It works on Linux, Mac OS X and Windows.
 
 ## Installation (both client and server)
 
