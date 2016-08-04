@@ -23,20 +23,18 @@ It's a small client-server script which allows to synchronise clipboard
 
 ## Usage
 
-Starting a server:
-    ```
+Starting a server using one of the following ways:
+
     clipboard-share                  # Using default settings, bind to 0.0.0.0:1077
     clipboard-share 192.168.1.2      # Using default port 1077
     clipboard-share 192.168.1.2:1077 # Full syntax
-    ```
 
 
-Starting a client:
-    ```
+Starting a client using one of the following ways:
+
     clipboard-share -c                  # Using default settings, connect to 10.0.2.2:1077
     clipboard-share -c 192.168.1.2      # Using default port 1077
     clipboard-share -c 192.168.1.2:1077 # Full syntax
-    ```
     
 Setting refresh interval in milliseconds (how often script will spy on
 clipboard changes), can be set in both client and server mode:
