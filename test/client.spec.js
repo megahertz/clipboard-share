@@ -46,15 +46,15 @@ function createServer() {
 
 function promiseConnectAndGetClipboard(client) {
   return new Promise((resolve, reject) => {
-    process.nextTick(() => {
-      client.on('paste', () => {
+    client.on('paste', () => {
+      setTimeout(() => {
         copyPaste.paste((e, text) => {
           if (e) {
             return reject(e);
           }
           resolve(text);
         });
-      });
+      }, 100);
     });
   });
 }
