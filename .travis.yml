@@ -6,5 +6,4 @@ node_js:
 matrix:
   fast_finish: true
 before_install:
-  - cp test/xclip-mock.js xclip
-  - chmod +x xclip
+  - export PATH=$PATH:$PWD
