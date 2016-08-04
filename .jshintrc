@@ -29,6 +29,7 @@
   "debug": false,
   "eqnull": true,
   "esnext": true,
+  "esversion": 6,
   "evil": false,
   "expr": false,
   "funcscope": false,
@@ -51,10 +52,6 @@
   "noyield": false,
   "browser": true,
   "node": true,
-  "globals": {
-    "angular": false,
-    "moment" : false
-  },
   "predef": [
     "angular",
     "jasmine",

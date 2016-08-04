@@ -38,6 +38,10 @@ Starting a client:
     clipboard-share -c 192.168.1.2:1077 # Full syntax
     ```
     
+Setting refresh interval in milliseconds (how often script will spy on
+clipboard changes), can be set in both client and server mode:
+
+    clipboard-share -c -i 100
 
 ## License
 
