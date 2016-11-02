@@ -2,16 +2,18 @@
 
 'use strict';
 
+const minimist     = require('minimist');
 const createClient = require('./lib/client');
 const createServer = require('./lib/server');
 
-//noinspection JSUnresolvedFunction
-const args = require('yargs')
-  .option('c', { alias: 'client', type: 'string'})
-  .alias('i', 'interval')
-  .alias('h', 'help')
-  .argv;
-
+const args = minimist(process.argv.slice(2), {
+  alias: {
+    client: 'c',
+    interval: 'i',
+    help: 'h'
+  },
+  string: ['client']
+});
 
 if (require.main === module) {
   main();

@@ -56,7 +56,8 @@ function promiseSendClipboard(client, server) {
 
 function promiseReceiveClipboard(client, server) {
   return new Promise((resolve, reject) => {
-    const socket = server.sockets.connected['/#' + client.id];
+    const socket = server.sockets.connected[client.id];
+
     setTimeout(() => {
       socket.on('paste', () => {
         copyPaste.paste((e, text) => {

@@ -61,7 +61,7 @@ function promiseConnectAndGetClipboard(client) {
 
 function promiseSetClipboardOnServer(client, server) {
   return new Promise((resolve, reject) => {
-    const socket = server.sockets.connected['/#' + client.id];
+    const socket = server.sockets.connected[client.id];
     socket.on('paste', text => {
       resolve(text);
     });
